@@ -52,20 +52,20 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Heya! {}, I am {}* 
-*A powerfull group management bot,I can help you in managing your Groups Themed from* [Darling In the Franxx]!
+*A Powerfull Group Management Bot,I Can Help You In Managing Your Groups Themed from* [Darling In the Franxx]!
 
 """
 
 HELP_STRINGS = """
- [Zero Two](https://telegra.ph/file/0b930645486429d762231.gif) 💗 comes with :-
+ [Alitya](https://telegra.ph/file/0b930645486429d762231.gif) comes with :-
 *AI Chatbot*, *Anime*, *Music*, *Notes*, *Filters* and *NSFW* functions!
 • __All commands can either be used with__ `/` __or__ `!`.
 """.format(
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-ZERO_IMG = "https://telegra.ph/file/0b930645486429d762231.gif
-ZEROIMGSTART = "https://telegra.ph/file/c2dcfa1a945502566db0f.gif"
+ZERO_IMG = "https://telegra.ph/file/87febe247f284566cefc0.jpg"
+ZEROIMGSTART = "https://telegra.ph/file/87febe247f284566cefc0.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 You can donate to the original writer of the Base code, Paul
@@ -187,22 +187,19 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="✅Add Zero Two to your group",
+                            text="✅Add Alitya to your group",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
                      [
                          InlineKeyboardButton(
-                             text="📡Zero Two Support",
-                             url=f"https://t.me/zero2botsupport"),
-                         InlineKeyboardButton(
-                             text="🚑Zero Two Updates",
-                             url="https://t.me/zero2updates"),              
+                             text="Alitya Support",
+                             url=f"https://t.me/AlitaOT"),              
                     ],
                      [
                         InlineKeyboardButton(
                              text="📍Getting Started Guide",
-                             url="https://t.me/zero2updates/14")                    
+                             url="https://t.me/AlitaOT")                    
                     ],
                      [
                         InlineKeyboardButton(
@@ -212,7 +209,7 @@ def start(update: Update, context: CallbackContext):
                       [
                         InlineKeyboardButton(
                              text="💫Commands/Help",
-                             url="https://t.me/Zero_2_Robot?start=help")      
+                             url="t.me/AlityaAyaBot?start=help")      
                     ]]))
     else:
         update.effective_message.reply_text(
